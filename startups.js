@@ -4,18 +4,16 @@ var querystring = require('querystring');
 var request = require('request');
 var config = {
     server: 'irc.freenode.com',
-    nick: 'slackbot',
-    username: 'bj4slackbot',
-    token: process.env.TOKEN ||'', // get from https://api.slack.com/web#basics
-    income_url: process.env.INCOME_URL || '',
-    outcome_token: process.env.OUTCOME_TOKEN || '',
+    nick: 'sunpy-slackbot',
+    username: 'sunpy-slackbot',
+    token: process.env.TOKEN ||'xoxb-4903850405-5NvjAhfdJ7olYuBtgq20LrEd', // get from https://api.slack.com/web#basics
+    income_url: process.env.INCOME_URL || 'https://hooks.slack.com/services/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',
+    outcome_token: process.env.OUTCOME_TOKEN || '75xn7HDPDAkhfM0RrJlrF2en',
     outcome_any_token: '',
     channels: {
-      '#cschat.tw': '#irc_cschattw',
-      '#haskell.tw': '#irc_haskelltw',
-      '#startups.tw': '#irc_startuptw'
+      '#sunpy': '#irc',
     },
-    r_channels: {},
+    r_channels: {'#irc': '#sunpy'},
     users: {
     },
     // optionals
